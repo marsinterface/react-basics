@@ -12,10 +12,13 @@ var config = {
         filename: "bundle.js",
         publicPath: "/app/"
     },
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     module: {
         loaders: [
             {
-                test: /\.js?/,
+                test: /\.(js|jsx)$/,
                 include: SRC_DIR,
                 loader: "babel-loader",
                 query: {
