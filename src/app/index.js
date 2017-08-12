@@ -1,0 +1,1 @@
+document.write("React and webpack Setup");
